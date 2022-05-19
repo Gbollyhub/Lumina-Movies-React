@@ -1,0 +1,22 @@
+.blog-content-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  @media screen and (max-width: 767px) {
+
+
+    .blog-content-row {
+      padding-right: 3%;
+      padding-left: 3%;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+}

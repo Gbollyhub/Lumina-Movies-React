@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+
+@import "./components/global/footer";
+@import "./components/global/header";
+@import "./components/feeds/feed-actions";
+@import "./components/feeds/feed-adbar";
+@import "./components/feeds/feed-card";
+@import "./components/feeds/feed-content";
+@import "./components/feeds/feed-sidebar";
+@import "./components/profile/info";
+
+
+@import "./pages/auth.scss";
+@import "./pages/feeds.scss";
+
+
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../assets/fonts/ionicons.eot') format('embedded-opentype'), url('../assets/fonts/ionicons.woff') format('woff'), url('../assets/fonts/ionicons.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }

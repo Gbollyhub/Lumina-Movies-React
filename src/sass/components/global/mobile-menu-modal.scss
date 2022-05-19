@@ -1,0 +1,74 @@
+.mobile-modal {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 99999;
+    display: none;
+    height: 100vh;
+    padding: 8%;
+    background-color: #202020;
+  }
+  
+  .mobile-menu-close {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-family: Ionicons, sans-serif;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+  }
+  
+  .link {
+    display: block;
+  }
+  
+  .mobile-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+
+  @media screen and (max-width: 767px) {
+
+  
+  
+    .mobile-link {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      font-size: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+    .mobile-link {
+      font-weight: 600;
+    }
+  
+}

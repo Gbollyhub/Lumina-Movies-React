@@ -1,0 +1,193 @@
+.app-card {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #242526;
+    flex-basis: 25%;
+  }
+  
+  .app-card.answer-decleration {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2d49d6;
+  }
+  
+  .app-card.reply {
+    background-color: #272829;
+  }
+  
+  .app-card.profile {
+    width: 60%;
+  }
+  
+  .app-card.auth {
+    width: 35%;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .app-card.create-post {
+    width: 60%;
+  }
+  
+  .app-details {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .card-actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .card-header {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .card-header.settings {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .card-header.create-post {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .card-paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #707070;
+    font-size: 11px;
+  }
+  
+  .card-paragraph.answers {
+    margin-top: 0px;
+  }
+  
+  .action-text {
+    margin-bottom: 10px;
+    color: #328af1;
+    font-size: 11px;
+  }
+  
+  .action-text.icon-text {
+    margin-left: 20px;
+    padding-left: 0px;
+    color: #fff;
+    font-size: 11px;
+  }
+  
+  .action-text.reply {
+    color: #d832f1;
+  }
+  
+  .div-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  .app-icons {
+    padding-right: 5px;
+    font-family: Ionicons, sans-serif;
+    font-size: 14px;
+  }
+  .card-image-box{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+  }
+
+  .card-image{
+  width: 100%;
+  height: 100%;
+  }
+
+
+  @media screen and (max-width: 991px) {
+  
+    .app-card {
+      flex-basis: 100%;
+    }
+  
+    .app-card.profile {
+      width: 80%;
+    }
+  
+    .app-card.auth {
+      width: 60%;
+    }
+  
+    .app-card.create-post {
+      width: 80%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+    .app-card {
+      width: 100%;
+    }
+  
+    .app-card.profile {
+      width: 95%;
+    }
+  
+    .app-card.auth {
+      width: 80%;
+    }
+  
+    .app-card.create-post {
+      width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 479px) {
+  
+    .app-card {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .app-card.auth {
+      width: 95%;
+      padding: 31px 17px;
+    }
+  
+    .app-card.create-post {
+      width: 95%;
+      padding-right: 19px;
+      padding-left: 19px;
+    }
+
+}

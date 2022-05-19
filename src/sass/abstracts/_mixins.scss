@@ -1,0 +1,29 @@
+@mixin header {
+    font-weight: bold;
+    font-size: 28px;
+}
+@mixin header-sub {
+font-weight: 400;
+font-size: 15px;
+}
+
+@mixin clearfix {
+&::after {
+  content: "";
+display: table;
+clear: both;  
+} 
+}
+
+@mixin respond($breakpoint){
+@if $breakpoint == "phone" {
+@media (max-width:479px) { @content };
+}
+@if $breakpoint == "landscape" {
+    @media (max-width:767px) { @content };
+    }
+@if $breakpoint == "tablet" {
+@media (max-width:991px) { @content };
+}
+
+}
