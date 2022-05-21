@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Register(){
     return (
      <>
@@ -19,9 +21,9 @@ function Register(){
         </form>
       
       </div>
-      <a href="#" className="primary-btn auth">REGISTER</a>
+      <Link to="#" className="primary-btn auth">REGISTER</Link>
       <br/>
-     <a href="/login"><p style={{color:'rgb(138, 138, 138)',textAlign: 'center'}}>Already have an account? Login</p></a> 
+     <Link to="/login"><p style={{color:'rgb(138, 138, 138)',textAlign: 'center'}}>Already have an account? Login</p></Link> 
     </div>
   </div>
      </>
