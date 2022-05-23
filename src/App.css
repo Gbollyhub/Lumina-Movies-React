@@ -1,7 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .App {
   margin: 0;
   background-color: #18191a;
   font-family: 'Poppins', sans-serif;
  font-size: 13px;
- width: 100%;
+
 }

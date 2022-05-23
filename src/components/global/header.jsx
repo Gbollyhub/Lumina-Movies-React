@@ -7,7 +7,7 @@ function Header() {
      <>
 
      {/* menu modal */}
-       {/* <MobileMenuModal/> */}
+       <MobileMenuModal/>
 
 
        {/* web header */}
@@ -16,10 +16,8 @@ function Header() {
       <div className="logo-text">LOGO</div>
     </div>
     <div className="nav-col-2">
-      <Link to="/" className="nav-col-2-links">TOPICS</Link>
-      <Link to="/" className="nav-col-2-links">SERIES</Link>
-      <Link to="index.html" className="nav-col-2-links nav-links-active">DISCUSSIONS</Link>
-      <Link to="/" className="nav-col-2-links">PODCAST</Link>
+      <Link to="/" className="nav-col-2-links nav-links-active">MOVIES</Link>
+      <Link to="/" className="nav-col-2-links">FAVOURITES</Link>
     </div>
     <div className="nav-col-3">
       <Link to="/login" className="nav-col-3-links">SIGN IN</Link>

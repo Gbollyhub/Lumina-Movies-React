@@ -6,12 +6,15 @@
 
 @import "./components/global/footer";
 @import "./components/global/header";
+@import "./components/global/loader";
+@import "./components/global/mobile-menu-modal";
 @import "./components/feeds/feed-actions";
 @import "./components/feeds/feed-adbar";
 @import "./components/feeds/feed-card";
 @import "./components/feeds/feed-content";
 @import "./components/feeds/feed-sidebar";
 @import "./components/profile/info";
+@import "./components/form";
 
 
 @import "./pages/auth.scss";
