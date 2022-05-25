@@ -5,11 +5,12 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    overflow-y: scroll;
   }
 
   .card-row{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
   }
 

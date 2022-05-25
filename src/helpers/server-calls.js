@@ -44,3 +44,26 @@ export async function GET(path) {
     }
   }
 
+  export async function PATCH(data, path) {
+    const url = `${process.env.REACT_APP_API_KEY}${path}`
+    try {
+      const response = await axios.patch(url, data, {headers: {'Content-Type': 'application/json'}});
+      return response;
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
+  }
+
+ 
+  export async function PATCH_WITH_TOKEN(data, path,token) {
+    const url = `${process.env.REACT_APP_API_KEY}${path}`
+    try {
+      const response = await axios.patch(url, data, {headers: {'Content-Type': 'application/json', 'Authorization':  `Bearer ${token}`}});
+      return response;
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
+  }
+

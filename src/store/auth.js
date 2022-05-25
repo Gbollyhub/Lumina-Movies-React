@@ -22,16 +22,18 @@ export const LoginUser = createAsyncThunk( 'auth/LoginUser', async (formData) =>
 })
 
 
+
+
 export const authSlice = createSlice({
     name: "auth",
     initialState: {
-    isAuth: false,
+    isAuth: localStorage.getItem('user') ?  true : false,
     isError: null,
-    user: {},
+    user: localStorage.getItem('user') ?  localStorage.getItem('user') : null,
     message: "",
     status: null,
     loader: false,
-    token: null
+    token: localStorage.getItem('token') ?  localStorage.getItem('token') : null
   },
   reducers: {
     passwordVal: (state) => {
@@ -42,8 +44,13 @@ export const authSlice = createSlice({
       state.isError = null;       
     },
     logout: (state) => {
-      state.user = {};
+      localStorage.removeItem('user')
+      localStorage.removeItem('token')
+      state.user = null;
+      state.status= null;
       state.isAuth = false;
+      state.message= "";
+      state.isError= null
     }
   },
   extraReducers: {
@@ -86,6 +93,6 @@ export const authSlice = createSlice({
 
 
 // Action creators are generated for each case reducer function
-export const { clearError, passwordVal } = authSlice.actions;
+export const {logout, clearError, passwordVal } = authSlice.actions;
 
 export default authSlice.reducer;

@@ -3,7 +3,7 @@ import Loader from "../../components/global/loader";
 import { useDispatch, useSelector } from "react-redux";
 import Notification from "../../components/global/notification"
 import { useState } from "react";
-import { LoginUser } from "../../store/auth";
+import { LoginUser,clearError } from "../../store/auth";
 
 function Login() {
 
@@ -18,6 +18,10 @@ function Login() {
 
   const [userData, setUserData] = useState(userForm);
 
+  const exitError = () => {
+    dispatch(clearError());
+  }
+
   const clearForm = () => {
    setUserData(userForm)
   }
@@ -29,14 +33,16 @@ function Login() {
   }
 
   if (isAuth) {
-    return <Navigate  to='/' />
+    localStorage.setItem('user', JSON.stringify(user))
+    localStorage.setItem('token', token)
+    window.location.assign("/")
    }
 
   return (
       <div className="profile-row">
         { loader ? <Loader /> : null }
         <div className="app-card auth">
-        { isError != null ? <Notification message={message} type={isError} /> : null }
+        { isError != null ? <Notification message={message} type={isError} actionHandler={exitError}/> : null }
           <div className="auth-header">Login into your account</div>
           <div className="login-sub">Provide your credentials to continue</div>
   
