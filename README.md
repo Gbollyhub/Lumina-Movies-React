@@ -1,10 +1,28 @@
-# Getting Started with Create React App
+# Lumina Movies Frontend With React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a SPA (Single Page Application) that shows everyone's favourite movies from database. React was choosen for this solution cause It has a robust ecosystem and is remarkably flexible. it comes with it own set of companion libraries and frameworks for implementing complex functions.With the assistance of features such as Virtual DOMs, JSX, impressive state management, and reusable components independent of each other,it also cuts development time.You can create clean and manageable codes with React’s strict structure rules and unidirectional flow of data. It is also effortless to test and maintain web applications and websites.
 
-## Available Scripts
+# Application User story
+
+The user opens the application e.g [https://lumina-movies.web.app or http://localhost:3000], registers and logs in.
+If Login is successful, The user is redirected to feeds page, the user sees list of movies of a certain category
+The user can change the movie category
+The user can add a movie as a favourite
+The user can navigate to favourites page
+The user sees list of all his favourite movies
+The user can remove a movie from the list of favourites
+The user can logout
+
+## How to run this application
 
 In the project directory, you can run:
+
+### `npm install`
+Installs all the packages the application needs to run smoothly
+
+## Configure .ENV fILE
+In the project file you would find a file .env_example which contains the environment variables needed to connect to the node backend [http://localhost:3000] of this aplication
+Create your own .env and add the corresponding environment variables e.g [REACT_APP_API_KEY = http://localhost:4000]
 
 ### `npm start`
 
@@ -14,11 +32,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -27,44 +40,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Security
+The user information is hashed so thirdparty can steal information
+A jwt token is used to authenticate the users requests, For instance, a user can only see his information.
+The jwt token does not expire so theres room for improvement
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
