@@ -21,7 +21,7 @@ In the project directory, you can run:
 Installs all the packages the application needs to run smoothly
 
 ## Configure .ENV fILE
-In the project file you would find a file .env_example which contains the environment variables needed to connect to the node backend [http://localhost:3000] of this aplication
+In the project file you would find a file .env_example which contains the environment variables needed to connect to the node backend [http://localhost:3000] of this application
 Create your own .env and add the corresponding environment variables e.g [REACT_APP_API_KEY = http://localhost:4000]
 
 ### `npm start`
